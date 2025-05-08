@@ -17,7 +17,7 @@ export const Navigation: FC = () => {
   return (
     <>
       <S.NavBar>
-        <S.Logo>Modsen Todo list</S.Logo>
+        <S.Logo>Todo list</S.Logo>
         <S.BurgerContainer onClick={toggleMenu} data-testid="burger-button">
           <S.Burger open={menuOpen}>
             <span />
