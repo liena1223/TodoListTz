@@ -20,7 +20,7 @@ const renderWithTheme = (ui: React.ReactElement) => {
 describe('Navigation component', () => {
   test('рендерит логотип и ссылки', () => {
     renderWithTheme(<Navigation />);
-    expect(screen.getByText(/Modsen Todo list/i)).toBeInTheDocument();
+    expect(screen.getByText(/Todo list/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Home/i })).toHaveAttribute('href', ROUTERS.home);
     expect(screen.getByRole('link', { name: /Settings/i })).toHaveAttribute(
       'href',
